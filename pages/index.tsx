@@ -4,9 +4,10 @@ import { useEffect } from 'react';
 import Image from 'next/image'
 import Benefits from '../components/Benefits'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Header from '../components/Headers'
 import Skills from '../components/Skills';
 import Navbar from '../components/Navbar';
+import Featured from '../components/Featured';
 
 export default function Home() {
   useEffect(() => {
@@ -21,9 +22,10 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Header />
-      <Skills/>
-      <Footer />
       <Benefits />
+      <Skills/>
+      <Featured/>
+      <Footer />
 
     </>
   )

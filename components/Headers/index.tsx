@@ -2,23 +2,35 @@ import React, { useState, useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Header() {
-    const [filled, setFilled] = useState(0);
-    const [isRunning, setIsRunning] = useState(true);
+    const [filled1, setFilled1] = useState(0);
+    const [isRunning1, setIsRunning1] = useState(true);
+
+    const [filled2, setFilled2] = useState(0);
+    const [isRunning2, setIsRunning2] = useState(true);
+
+    const [filled3, setFilled3] = useState(0);
+    const [isRunning3, setIsRunning3] = useState(true);
     useEffect(() => {
-        if (filled < 80 && isRunning) {
-            setTimeout(() => setFilled(prev => prev += 2), 50)
+        if (filled1 < 90 && isRunning1) {
+            setTimeout(() => setFilled1(prev => prev += 2), 40)
+        } else if(filled2 < 80 && isRunning2){
+            setTimeout(() => setFilled2(prev => prev += 2), 40)
+
+        }else if(filled3 < 70 && isRunning3){
+            setTimeout(() => setFilled3(prev => prev += 2), 40)
+
         }
-    }, [filled, isRunning])
+    }, [filled1,filled2,filled3, isRunning1,isRunning2,isRunning3])
     return (
         <>
             <section className="header lg:pt-16 pb-50 bg-kBackgroundColor">
                 <div className="container-xxl container-fluid">
                     <div className="row gap-lg-0 gap-5">
                         <div className="col-lg-6 col-12 my-auto">
-                            <p className="text-support lg:text-[18px] text-[14px] text-kGreenColor">
+                            <p className="text-support text-lg text-kGreenColor">
                                 #collaborationwithme
                             </p>
-                            <h1 className="header-title text-white lg:font-bold font-semibold lg:text-[36px] text-[24px] lg:mt-3 mt-2">
+                            <h1 className="header-title text-white lg:font-bold font-semibold lg:text-[36px] text-[30px] lg:mt-3 mt-2">
                                 Hello, i’m Alvito Aditya
                             </h1>
 
@@ -34,7 +46,7 @@ export default function Header() {
 
                                 ]}
                                 wrapper="div"
-                                className='title-profesi lg:font-bold font-semibold lg:text-[36px] text-[24px]'
+                                className='title-profesi lg:font-bold font-semibold lg:text-[36px] text-[30px]'
                                 cursor={true}
                                 repeat={Infinity}
 
@@ -70,13 +82,13 @@ export default function Header() {
                                                     <div className="progressbar">
                                                         <div style={{
                                                             height: "100%",
-                                                            width: `${filled}%`,
+                                                            width: `${filled1}%`,
                                                             backgroundColor: "#7F00FF",
                                                             transition: "width 0.5s"
                                                         }}></div>
 
                                                     </div>
-                                                    <span className="progressPercent">{filled}%</span>
+                                                    <span className="progressPercent">{filled1}%</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,13 +103,13 @@ export default function Header() {
                                                     <div className="progressbar">
                                                         <div style={{
                                                             height: "100%",
-                                                            width: `${filled}%`,
+                                                            width: `${filled2}%`,
                                                             backgroundColor: "#7F00FF",
                                                             transition: "width 0.5s"
                                                         }}></div>
 
                                                     </div>
-                                                    <span className="progressPercent">{filled}%</span>
+                                                    <span className="progressPercent">{filled2}%</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,13 +124,13 @@ export default function Header() {
                                                     <div className="progressbar">
                                                         <div style={{
                                                             height: "100%",
-                                                            width: `${filled}%`,
+                                                            width: `${filled3}%`,
                                                             backgroundColor: "#7F00FF",
                                                             transition: "width 0.5s"
                                                         }}></div>
 
                                                     </div>
-                                                    <span className="progressPercent">{filled}%</span>
+                                                    <span className="progressPercent">{filled3}%</span>
                                                 </div>
                                             </div>
                                         </div>

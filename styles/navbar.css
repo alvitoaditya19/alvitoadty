@@ -89,7 +89,11 @@
     }
   
     .nav-menu.active {
-      background: #0B034A;
+      background: rgba(255, 255, 255, 0.42);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.4px);
+-webkit-backdrop-filter: blur(9.4px);
+border: 1px solid rgba(255, 255, 255, 0.29);
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;
