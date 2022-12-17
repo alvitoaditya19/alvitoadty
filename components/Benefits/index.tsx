@@ -5,7 +5,7 @@ export default function Benefits() {
    <>
        <section className="benefits bg-kBackgroundColor lg:pb-12 pb-6">
         <div className="container">
-            <div className="row text-center fade-up ">
+            <div className="row text-center" data-aos="fade-up" data-aos-duration="400">
                 <div className="col-6/6 col-12 header-wrap">
                     <p className="text-base font-semibold text-kGreenColor">
                         OUR SUPER BENEFITS

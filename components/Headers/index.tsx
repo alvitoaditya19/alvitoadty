@@ -56,7 +56,7 @@ export default function Header() {
                             </p>
 
 
-                            <div className="d-flex flex-lg-row flex-column gap-4 lg:mt-6 mt-3">
+                            <div className="flex flex-lg-row flex-column gap-4 lg:mt-6 mt-3">
                                 <a className="btn lg:text-lg text-base text-white rounded-pill btn-get-started lg:px-12 lg:py-3 " href="#feature" role="button">Get
                                     Started</a>
 

@@ -153,6 +153,10 @@
   border-radius: 1.625rem;
 }
 
+.featured-game .featured-game-card .blur-sharp img{
+  max-width: none;
+}
+
 .featured-game .featured-game-card:hover .blur-sharp {
   width: 192px;
   border: 7px solid #0B034A;
@@ -277,6 +281,7 @@ footer ul li a:hover {
   /* Featured Game */
   .featured-game .featured-game-card:hover .blur-sharp {
     position: absolute;
+   
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
