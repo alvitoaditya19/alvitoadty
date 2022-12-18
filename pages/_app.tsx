@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import '../styles/homepage.css';
 import '../styles/utilities.css';
 import '../styles/navbar.css';
-
+import Script from 'next/script'
 
 
 import type { AppProps } from 'next/app';
@@ -35,15 +35,16 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"/>
 
         {/* Call Boostrap JS */}
-        <script
+
+
+        
+      </Head>
+      <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
           crossOrigin="anonymous"
         />
-
-        
-      </Head>
-
+      {/* <Script src="https://third-party-script.js"></Script> */}
       <Component {...pageProps} />
       <ToastContainer />
     </>

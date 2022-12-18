@@ -8,6 +8,7 @@ import Header from '../components/Headers'
 import Skills from '../components/Skills';
 import Navbar from '../components/Navbar';
 import Featured from '../components/Featured';
+import Project from '../components/Project';
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
       <Benefits />
       <Skills/>
       <Featured/>
+      <Project/>
       <Footer />
 
     </>

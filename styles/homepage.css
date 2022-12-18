@@ -186,6 +186,12 @@
 
 /*  */
 
+/* Project */
+.btn-project{
+  background: linear-gradient(266.69deg, #E100FF -5.19%, #7F00FF 73.59%);
+}
+/*  */
+
 /* Reached */
 .reached .vertical-line {
   width: 1px;
