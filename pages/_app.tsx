@@ -1,6 +1,5 @@
 import '../styles/globals.css';
 import '../styles/homepage.css';
-import '../styles/utilities.css';
 import '../styles/navbar.css';
 import Script from 'next/script'
 
@@ -14,12 +13,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {/* Boostrap css */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-          crossOrigin="anonymous"
-        />
+        <link rel="stylesheet" href="/boostrap/css/bootstrap.css"/>
+
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -39,11 +34,17 @@ export default function App({ Component, pageProps }: AppProps) {
 
         
       </Head>
+      {/* Boostrap JS */}
       <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-          crossOrigin="anonymous"
-        />
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossOrigin="anonymous"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossOrigin="anonymous"
+      />
       {/* <Script src="https://third-party-script.js"></Script> */}
       <Component {...pageProps} />
       <ToastContainer />

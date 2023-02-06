@@ -20,6 +20,7 @@ module.exports = {
       kBackgroundColor2: '#1A0D73',
       kGreenColor: '#14FFEC',
       kGreyColor: '#A8B1D0',
+      kPurple:'#E100FF',
 
       inherit: colors.inherit,
       current: colors.current,

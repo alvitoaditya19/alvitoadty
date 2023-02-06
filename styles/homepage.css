@@ -24,15 +24,7 @@
 }
 
 .btn-get-started {
-  background: rgb(127, 0, 255);
-  background: linear-gradient(90deg, rgba(127, 0, 255, 1) 19%, rgba(225, 0, 255, 1) 89%);
-  /* padding: 0.75rem 3rem; */
-}
-
-
-.header .btn-get {
-  background-color: #4d17e2;
-  padding: 0.75rem 3rem;
+  background: linear-gradient(266.69deg, #E100FF 11.05%, #0057FF 111.12%);
 }
 
 .header .btn-learn:hover {
@@ -72,7 +64,7 @@
 
 .header .title-profesi {
 
-  background: linear-gradient(266.22deg, #E100FF 27.18%, #7F00FF 81.75%);
+  background: linear-gradient(266.22deg, #E100FF 27.18%, #0057FF 81.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,7 +75,7 @@
 /* Benefits */
 
 .title-gradient {
-  background: linear-gradient(90deg, #7F00FF 19.62%, #E100FF 73.77%);
+  background: linear-gradient(266.22deg, #E100FF 27.18%, #0057FF 81.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -132,7 +124,8 @@
   transition: all 0.4s;
   border-radius: 1.625rem;
   width: 205px;
-  height: 270px;
+  height: 290px;
+
 }
 
 .featured-game .featured-game-card:hover {
@@ -144,7 +137,7 @@
   transition: all 0.4s;
   filter: blur(10px);
   width: 181px;
-  height: 246px;
+  height: 260px;
   -webkit-filter: blur(10px);
 }
 

@@ -1,70 +1,68 @@
 import React from 'react'
 
 export default function Benefits() {
-  return (
-   <>
-       <section className="benefits bg-kBackgroundColor lg:pb-12 pb-6">
-        <div className="container">
-            <div className="row text-center" data-aos="fade-up" data-aos-duration="400">
-                <div className="col-6/6 col-12 header-wrap">
-                    <p className="text-base font-semibold text-kGreenColor">
-                        OUR SUPER BENEFITS
-                    </p>
-
-                    
-                    <h2 className="title-gradient font-semibold text-[30px]">
-                        Learn Faster & Better
-                    </h2>
-                </div>
-            </div>
-            <div className="row mt-10">
-                <div className="w-6/6 md:w-3/12 px-4 mb-8 md:mb-0">
-                    <div className="item-benefit">
-                        <img src="/ic/ic_globe.png" className="icon" alt=""/>
-                        <h3 className="title text-white">
-                            Diversity
-                        </h3>
-                        <p className="support text-kGreyColor mt-3">
-                            Learn from anyone around the <br/> world and get a new skills
-                        </p>
+    return (
+        <>
+            <section className="benefits bg-kBackgroundColor lg:pb-12 pb-6 pt-8 lg:pt-0">
+                <div className="container">
+                    <div className="flex text-center">
+                        <div className="col-6/6 col-12 header-wrap">
+                            <p className="text-base font-semibold text-kGreenColor">
+                                My Proffesional Skills
+                            </p>
+                            <h2 className="title-gradient font-semibold text-[30px] mt-2">
+                                Grow and Level Up From Here
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="row mt-10">
+                        <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
+                            <div className="item-benefit">
+                                <img src="/ic/ic_globe-1.png" className="icon" alt="" />
+                                <h3 className="title text-white">
+                                    Professional
+                                </h3>
+                                <p className="support text-kGreyColor mt-3">
+                                    With my professional services, you'll receive a top-quality website that exceeds your expectations.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
+                            <div className="item-benefit">
+                                <img src="/ic/ic_globe-2.png" className="icon" alt="" />
+                                <h3 className="title text-white">
+                                    Creative
+                                </h3>
+                                <p className="support text-kGreyColor mt-3">
+                                    Take your creative website and application to the next level with my professional solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
+                            <div className="item-benefit">
+                                <img src="/ic/ic_globe-3.png" className="icon" alt="" />
+                                <h3 className="title text-white">
+                                    Expertise
+                                </h3>
+                                <p className="support text-kGreyColor mt-3">
+                                    With my full-stack skills, you'll get a website that not only looks great, but also performs exceptionally well.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
+                            <div className="item-benefit">
+                                <img src="/ic/ic_globe-4.png" className="icon" alt="" />
+                                <h3 className="title text-white">
+                                    24/7 Services
+                                </h3>
+                                <p className="support text-kGreyColor mt-3">
+                                Stay ahead of the curve with my 24/full-stack development solutions available whenever you need them.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="w-6/6 md:w-3/12 px-4 mb-8 md:mb-0">
-                    <div className="item-benefit">
-                        <img src="/ic/ic_globe-1.png" className="icon" alt=""/>
-                        <h3 className="title text-white">
-                            A.I Guideline
-                        </h3>
-                        <p className="support text-kGreyColor mt-3">
-                            Lara will help you to choose <br/> which path that suitable for you
-                        </p>
-                    </div>
-                </div>
-                <div className="w-6/6 md:w-3/12 px-4 mb-8 md:mb-0">
-                    <div className="item-benefit">
-                        <img src="/ic/ic_globe-2.png" className="icon" alt=""/>
-                        <h3 className="title text-white">
-                            1-1 Mentoring
-                        </h3>
-                        <p className="support text-kGreyColor mt-3">
-                            We will ensure that you will get <br/> what you really do need
-                        </p>
-                    </div>
-                </div>
-                <div className="w-6/6 md:w-3/12 px-4 mb-8 md:mb-0">
-                    <div className="item-benefit">
-                        <img src="/ic/ic_globe-3.png" className="icon" alt=""/>
-                        <h3 className="title text-white">
-                            Future Job
-                        </h3>
-                        <p className="support text-kGreyColor mt-3">
-                            Get your dream job in your dream <br/> company together with us
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   </>
-  )
+            </section>
+        </>
+    )
 }

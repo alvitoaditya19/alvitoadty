@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import  Link  from "next/link";
+import Link from "next/link";
+import Image from "next/image";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -9,17 +10,23 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <Link href="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
+          <Link href="/" className="nav-logo items-center">
+            <div className="flex">
+            <Image src="/images/my-logo.png"
+              width={60}
+              height={60}
+              alt="console"
+              className='rounded-2xl relative mr-3 mb-4' />
+              <h1 className="mt-2">Alvito Aditya</h1>
+            </div>
           </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-              
+
                 href="/"
-              
+
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -28,9 +35,9 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-              
+
                 href="/about"
-               
+
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -39,9 +46,9 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-              
+
                 href="/blog"
-               
+
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -50,9 +57,9 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-              
+
                 href="/contact"
-                
+
                 className="nav-links"
                 onClick={handleClick}
               >
