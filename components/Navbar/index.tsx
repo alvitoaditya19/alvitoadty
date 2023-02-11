@@ -36,7 +36,7 @@ function NavBar() {
             <li className="nav-item">
               <Link
 
-                href="/about"
+                href="#"
 
                 className="nav-links"
                 onClick={handleClick}
@@ -47,7 +47,7 @@ function NavBar() {
             <li className="nav-item">
               <Link
 
-                href="/blog"
+                href="#"
 
                 className="nav-links"
                 onClick={handleClick}
@@ -58,12 +58,12 @@ function NavBar() {
             <li className="nav-item">
               <Link
 
-                href="/contact"
+                href="#"
 
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact Us
+                Contact Me
               </Link>
             </li>
           </ul>

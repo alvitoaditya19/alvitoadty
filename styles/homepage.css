@@ -23,6 +23,22 @@
   color: #B0B1CE;
 }
 
+/* Slideshow */
+.react-slideshow-container .default-nav{
+  background: #ffffff !important;
+  height: 40px !important;
+  width: 40px !important;
+  fill: #0057FF !important;
+}
+
+@media (min-width: 992px) {
+  .react-slideshow-container .default-nav{
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+
+
 .btn-get-started {
   background: linear-gradient(266.69deg, #E100FF 11.05%, #0057FF 111.12%);
 }

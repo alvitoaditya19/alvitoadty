@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function ProjectItem() {
+interface ProjectTypes{
+    image:string,
+    name: string,
+    category:string
+}
+
+export default function ProjectItem({image, name,category}:ProjectTypes) {
     return (
         <div className="w-full md:w-1/4 px-4  rounded-2xl relative md:mb-0 mb-[40px]">
 
@@ -12,9 +18,9 @@ export default function ProjectItem() {
                         <img src="/images/ic_play.svg" className="lg:w-20 w-12" alt="" />
                     </div>
                     <Image
-                        src="/images/pro-1.png"
+                        src={image}
                         width={500}
-                        height={500}
+                        height={600}
                         alt="console"
                         className='rounded-2xl relative'
                     />
@@ -28,22 +34,17 @@ export default function ProjectItem() {
                         </div>
                     </div>
                 </div>
-                <p className="mt-[30px] text-2xl text-white mb-2 text-center font-medium">
-                    MedicalCare UI
-
+                <p className="mt-[30px] text-xl text-white mb-2 text-center font-medium">
+                  {name}
                 </p>
-
                 <p className=" text-xl text-kGreyColor mb-[30px] text-center">
-                    User Interface Design
-
+                    {category}
                 </p>
-
                 <div className="flex flex-col items-center absolute bottom-[-24px]">
                     <a className="btn btn-project  text-white py-2 px-12 rounded-full justify-center text-[20px] font-medium">
                         See Detail
                     </a>
                 </div>
-
             </div>
         </div>
     )

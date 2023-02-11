@@ -6,13 +6,13 @@ import ItemSkill from '../atoms/ItemSkill';
 export default function Skills() {
     return (
         <>
-            <section className="w-[100%] flex justify-center items-center flex-col pt-4 pb-8 overflow-hidden bg-kBackgroundColor">
+            <section className="w-[100%] flex justify-center items-center flex-col lg:pb-10 pb-8 overflow-hidden bg-kBackgroundColor">
                 <div className="flex text-center">
                     <div className="w-full header-wrap">
                         <p className="text-base font-semibold text-kGreenColor">
                             My Advanced Skills
                         </p>
-                        <h2 className="title-gradient font-semibold text-[30px] mt-2 mb-10">
+                        <h2 className="title-gradient font-semibold text-[30px] mt-2 mb-8">
                             The Latest and Most Advanced Technology
                         </h2>
                     </div>

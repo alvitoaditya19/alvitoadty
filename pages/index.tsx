@@ -9,11 +9,15 @@ import Skills from '../components/Skills';
 import Navbar from '../components/Navbar';
 import Featured from '../components/Featured';
 import Project from '../components/Project';
+import MyAchievement from '../components/Achievement';
+
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  
   return (
     <>
       <Head>
@@ -27,8 +31,8 @@ export default function Home() {
       <Skills/>
       <Featured/>
       <Project/>
+      <MyAchievement/>
       <Footer />
-
     </>
   )
 }

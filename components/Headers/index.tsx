@@ -44,8 +44,6 @@ export default function Header() {
                                     2000,
                                     'UI Designer',
                                     2000,
-
-
                                 ]}
                                 wrapper="div"
                                 className='title-profesi lg:font-bold font-semibold lg:text-[36px] text-[30px]'

@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/homepage.css';
 import '../styles/navbar.css';
+import 'react-slideshow-image/dist/styles.css'
 import Script from 'next/script'
 
 
