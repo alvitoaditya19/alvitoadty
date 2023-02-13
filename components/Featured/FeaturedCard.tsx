@@ -9,7 +9,7 @@ interface FeaturedCardTypes {
 export default function FeaturedCard(props: FeaturedCardTypes) {
     const { name, category, image } = props;
     return (
-        <div className="featured-game-card relative">
+        <div className="featured-skill-card relative">
             <a href="./src/detail.html">
                 <div className="blur-sharp">
                     <img src={image} width="205" height="270" alt="" />
