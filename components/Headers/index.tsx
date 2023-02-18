@@ -57,8 +57,15 @@ export default function Header() {
 
 
                             <div className="flex flex-row gap-4 lg:mt-6 mt-3 items-center">
-                                <a className="btn lg:text-lg text-base text-white rounded-pill btn-get-started lg:px-12 lg:py-3 " href="#feature" role="button">Get
-                                    Started</a>
+                                <div className="group">
+                                    <Link href="/sign-in" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
+                                        <p >
+                                            Hire Me
+                                        </p>
+                                        <img src="/ic/ic-arrow-right.svg" alt="" />
+                                    </Link>
+
+                                </div>
                                 <Link href="https://www.instagram.com/alvitoadty/">
                                     <Image src="/ic/ig.svg" height={30} width={30} alt="" />
 
@@ -159,7 +166,6 @@ export default function Header() {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

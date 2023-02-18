@@ -1,16 +1,16 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
-interface ProjectTypes{
-    image:string,
+interface ProjectTypes {
+    image: string,
     name: string,
-    category:string
+    category: string
 }
 
-export default function ProjectItem({image, name,category}:ProjectTypes) {
+export default function ProjectItem({ image, name, category }: ProjectTypes) {
     return (
-        <div className="w-full md:w-1/4 px-4  rounded-2xl relative md:mb-0 mb-[40px]">
-
+        <div className="w-full md:w-1/4 px-4 rounded-2xl relative md:mb-0 mb-[40px]">
             <div className="item flex flex-col items-center justify-end  bg-kBackgroundColor2 p-4 rounded-2xl relative">
                 <div className='relative group overflow-hidden'>
                     <div className="absolute top-1/2 left-1/2 -translate-y-[200px] group-hover:-translate-y-1/2
@@ -34,16 +34,33 @@ export default function ProjectItem({image, name,category}:ProjectTypes) {
                         </div>
                     </div>
                 </div>
+                {/* <div className="col-span-2 mt-[26px]">
+                    <div className="p-1 rounded-full bg-kPurple group">
+                        <a href="payment.html" className="btn-project">
+                            <p>
+                                Sign In
+                            </p>
+                            <img src="/ic/ic-arrow-right.svg" alt="" />
+                        </a>
+                    </div>
+                </div> */}
+
                 <p className="mt-[30px] text-xl text-white mb-2 text-center font-medium">
-                  {name}
+                    {name}
                 </p>
                 <p className=" text-xl text-kGreyColor mb-[30px] text-center">
                     {category}
                 </p>
-                <div className="flex flex-col items-center absolute bottom-[-24px]">
-                    <a className="btn btn-project  text-white py-2 px-12 rounded-full justify-center text-[20px] font-medium">
-                        See Detail
-                    </a>
+
+
+                <div className="flex flex-col items-center absolute bottom-[-24px] group">
+                    <Link href="/detail-project" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
+                        <p >
+                            See Detail
+                        </p>
+                        <img src="/ic/ic-arrow-right.svg" alt="" />
+                    </Link>
+
                 </div>
             </div>
         </div>

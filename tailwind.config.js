@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   presets: [],
   darkMode: 'media', // or 'class'
@@ -22,7 +23,7 @@ module.exports = {
       kGreyColor: '#A8B1D0',
       kPurple:'#E100FF',
       kBlueColor:'#0057FF',
-
+      primary:'#E100FF',
 
       inherit: colors.inherit,
       current: colors.current,
@@ -978,5 +979,5 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [require('flowbite/plugin')]
 }
