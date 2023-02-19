@@ -33,7 +33,7 @@ export default function MyAchievement() {
     ];
     return (
         <div className=" bg-kBackgroundColor lg:pt-16 pt-14">
-            <div className="container">
+            <div className="container mx-auto">
                 <div className="flex text-center">
                     <div className="w-full header-wrap pb-10">
                         <p className="text-base font-semibold text-kGreenColor">

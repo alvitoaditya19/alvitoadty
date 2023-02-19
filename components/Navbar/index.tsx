@@ -11,13 +11,13 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <Link href="/" className="nav-logo items-center">
-            <div className="flex">
+            <div className="flex items-center">
             <Image src="/images/my-logo.png"
               width={60}
               height={60}
               alt="console"
-              className='rounded-2xl relative mr-3 mb-4' />
-              <h1 className="mt-2">Alvito Aditya</h1>
+              className='rounded-2xl relative mr-4' />
+              <h1>Alvito Aditya</h1>
             </div>
           </Link>
 

@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         {/* Boostrap css */}
-        <link rel="stylesheet" href="/boostrap/css/bootstrap.css"/>
+        {/* <link rel="stylesheet" href="/boostrap/css/bootstrap.css"/> */}
 
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />

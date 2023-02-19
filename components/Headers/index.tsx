@@ -81,10 +81,10 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 md:block hidden">
-                            <div className="flex justify-content-lg-end justify-content-center me-lg-5">
-                                <div className="position-relative" data-aos="zoom-in">
-                                    <img src="/images/img-prof.png" className="img-fluid" alt="" />
-                                    <div className="card left-card position-absolute border-0">
+                            <div className="flex lg:justify-end justify-center lg:mr-2">
+                                <div className="relative" data-aos="zoom-in">
+                                    <img src="/images/img-prof.png" className="max-w-full h-auto" alt="" />
+                                    <div className="card left-card absolute border-0 bg-white">
                                         <div className="d-flex align-items-center mb-2 gap-3">
                                             <h1 className="text-[14px] font-semibold text-kBackgroundColor">
                                                 My Skills
@@ -154,10 +154,10 @@ export default function Header() {
                                         </div>
 
                                     </div>
-                                    <div className="card right-card position-absolute border-0">
-                                        <div className="position-relative d-flex flex-row justify-content-center mb-6">
-                                            <img src="/ic/ic-check.png" className="rounded-pill w-20" alt="" />
-                                            <p className="right-card-support text-white text-xxs text-center position-absolute m-0">
+                                    <div className="card right-card absolute border-0 bg-white">
+                                        <div className="relative flex flex-row justify-center mb-6">
+                                            <img src="/ic/ic-check.png" className=" rounded-lg w-20" alt="" />
+                                            <p className="right-card-support text-white text-xxs text-center absolute m-0">
                                                 New</p>
                                         </div>
                                         <div>

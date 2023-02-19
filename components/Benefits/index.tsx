@@ -4,9 +4,9 @@ export default function Benefits() {
     return (
         <>
             <section className="benefits bg-kBackgroundColor lg:pb-10 pb-8 pt-8 lg:pt-10">
-                <div className="container">
+                <div className="container mx-auto">
                     <div className="flex text-center">
-                        <div className="col-6/6 col-12 header-wrap">
+                        <div className="w-full header-wrap">
                             <p className="text-base font-semibold text-kGreenColor">
                                 My Proffesional Skills
                             </p>
@@ -15,11 +15,11 @@ export default function Benefits() {
                             </h2>
                         </div>
                     </div>
-                    <div className="row mt-8">
+                    <div className="flex flex-wrap mt-8">
                         <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
                             <div className="item-benefit">
                                 <img src="/ic/ic_globe-1.png" className="icon" alt="" />
-                                <h3 className="title text-white">
+                                <h3 className="font-medium text-[20px] text-white">
                                     Professional
                                 </h3>
                                 <p className="support text-kGreyColor mt-3">
@@ -30,7 +30,7 @@ export default function Benefits() {
                         <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
                             <div className="item-benefit">
                                 <img src="/ic/ic_globe-2.png" className="icon" alt="" />
-                                <h3 className="title text-white">
+                                <h3 className="font-medium text-[20px] text-white">
                                     Creative
                                 </h3>
                                 <p className="support text-kGreyColor mt-3">
@@ -41,7 +41,7 @@ export default function Benefits() {
                         <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
                             <div className="item-benefit">
                                 <img src="/ic/ic_globe-3.png" className="icon" alt="" />
-                                <h3 className="title text-white">
+                                <h3 className="font-medium text-[20px] text-white">
                                     Expertise
                                 </h3>
                                 <p className="support text-kGreyColor mt-3">
@@ -52,7 +52,7 @@ export default function Benefits() {
                         <div className="w-6/6 md:w-1/4 px-4 mb-8 md:mb-0">
                             <div className="item-benefit">
                                 <img src="/ic/ic_globe-4.png" className="icon" alt="" />
-                                <h3 className="title text-white">
+                                <h3 className="font-medium text-[20px] text-white">
                                     24/7 Services
                                 </h3>
                                 <p className="support text-kGreyColor mt-3">

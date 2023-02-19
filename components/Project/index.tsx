@@ -5,7 +5,7 @@ import ProjectItem from './Item';
 export default function Project() {
     return (
         <div className="lg:pt-10 pt-8 bg-kBackgroundColor">
-            <div className="container">
+            <div className="container mx-auto">
                 <div className="flex text-center">
                     <div className="w-full header-wrap pb-6">
                         <p className="text-base font-semibold text-kGreenColor">
