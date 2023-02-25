@@ -3,12 +3,15 @@ import Link from 'next/link';
 import React from 'react';
 
 interface ProjectTypes {
-    image: string,
-    name: string,
-    category: string
+    id:string;
+    image: string[];
+    suitable: string[];
+    name: string;
+    category: string;
+    subName: string;
 }
 
-export default function ProjectItem({ image, name, category }: ProjectTypes) {
+export default function ProjectItem({ image, name, category,id }: ProjectTypes) {
     return (
         <div className="w-full md:w-1/4 px-4 rounded-2xl relative md:mb-0 mb-[40px]">
             <div className="item flex flex-col items-center justify-end  bg-kBackgroundColor2 p-4 rounded-2xl relative">
@@ -18,7 +21,7 @@ export default function ProjectItem({ image, name, category }: ProjectTypes) {
                         <img src="/images/ic_play.svg" className="lg:w-20 w-12" alt="" />
                     </div>
                     <Image
-                        src={image}
+                        src={image[0]}
                         width={500}
                         height={600}
                         alt="console"
@@ -54,7 +57,7 @@ export default function ProjectItem({ image, name, category }: ProjectTypes) {
 
 
                 <div className="flex flex-col items-center absolute bottom-[-24px] group">
-                    <Link href="/detail-project" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
+                    <Link  href={`/detail/${id}`} className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
                         <p >
                             See Detail
                         </p>

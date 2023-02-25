@@ -2,20 +2,25 @@
 import React, { useState, useEffect, useRef } from 'react'
 import cx from "classnames";
 
-import NavBar from '../components/Navbar'
+import NavBar from '../../components/Navbar'
+import { projectData } from '../../components/Data/data';
+import Link from 'next/link';
 
-export default function DetailProject() {
-    const [image, setTmage] = useState("/imgzul/gallery-2.png");
-    const [imageCon1, setImageCon1] = useState("/imgzul/gallery-2.png");
+export default function DetailProject({ dataItem }: any) {
+    const [image, setTmage] = useState(dataItem[0].image[0]);
+    const [imageCon1, setImageCon1] = useState(dataItem[0].image[0]);
     const [imageCon2, setImageCon2] = useState("");
     const [imageCon3, setImageCon3] = useState("");
     const [imageCon4, setImageCon4] = useState("");
 
     const handleClick1 = (event: any) => {
+
         setTmage(event.target.getAttribute('src'))
         setImageCon1(event.target.getAttribute('src'))
     };
     const handleClick2 = (event: any) => {
+
+
         setTmage(event.target.getAttribute('src'))
         setImageCon2(event.target.getAttribute('src'))
     };
@@ -37,6 +42,9 @@ export default function DetailProject() {
         "ring-2 ring-indigo-500 ": false,
     });
     const buttonRef = useRef(null);
+    useEffect(() => {
+        console.log("dada", dataItem)
+    })
 
     return (
         <>
@@ -48,25 +56,25 @@ export default function DetailProject() {
                             <h1
                                 className="mb-2 text-3xl font-bold leading-normal tracking-tight text-white sm:text-4xl md:text-4xl"
                             >
-                                RoboCrypto UI Kit
+                                {dataItem[0].name}
                             </h1>
-                            <p className="text-kGreyColor">Build your next coin startup</p>
+                            <p className="text-kGreyColor">{dataItem.subName}</p>
                             <section id="gallery">
                                 {/* <img src="/imgzul/gallery-1.png" alt="" className="w-full mt-6 rounded-2xl" /> */}
                                 <img src={image} alt="" className="w-full mt-6 rounded-2xl" />
 
                                 <div className="grid grid-cols-4 gap-4 mt-4">
                                     <div className={image === imageCon1 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
-                                        <img src="/imgzul/gallery-2.png" className="w-full" alt="" onClick={handleClick1} />
+                                        <img src={dataItem[0].image[0]} className="w-full" alt="" onClick={handleClick1} />
                                     </div>
                                     <div className={image === imageCon2 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"} >
-                                        <img src="/imgzul/gallery-3.png" className="w-full" alt="" onClick={handleClick2} />
+                                        <img src={dataItem[0].image[1]} className="w-full" alt="" onClick={handleClick2} />
                                     </div>
                                     <div className={image === imageCon3 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
-                                        <img src="/imgzul/gallery-4.png" className="w-full" alt="" onClick={handleClick3} />
+                                        <img src={dataItem[0].image[2]} className="w-full" alt="" onClick={handleClick3} />
                                     </div>
                                     <div className={image === imageCon4 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
-                                        <img src="/imgzul/gallery-5.png" className="w-full" alt="" onClick={handleClick4} />
+                                        <img src={dataItem[0].image[3]} className="w-full" alt="" onClick={handleClick4} />
                                     </div>
                                 </div>
                             </section>
@@ -74,18 +82,12 @@ export default function DetailProject() {
                                 <h1 className="mt-8 mb-3 text-lg font-semibold text-white">About</h1>
                                 <div className="text-kGreyColor">
                                     <p className="pb-4">
-                                        Sportly App UI Kit will help your Sport, Fitness, and Workout App
-                                        products or services. Came with modern and sporty style, you can
-                                        easily edit and customize all elements with components that can
-                                        speed up your design process.
+                                        Movie Stream App can get a movie data from moviedb api with this application and you can choose the movie you like which will be stored in state management
                                     </p>
                                     <p className="pb-4">
-                                        Suitable for : <br />
-                                        - Sport App <br />
-                                        - Fitness & GYM App <br />
-                                        - Workout App <br />
-                                        - Trainer & Tracker App <br />
-                                        - And many more <br />
+                                        <h1>Suitable for : </h1>
+                                        {dataItem[0].image.map((suitbale: any) => <div key={suitbale}
+                                            className="texl-lg">{suitbale}</div>)}
                                     </p>
                                 </div>
                             </section>
@@ -136,12 +138,16 @@ export default function DetailProject() {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a
-                                        href="#"
-                                        className="btn btn-project inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white rounded-full  md:py-2 md:text-md md:px-10"
-                                    >
-                                        Download Now
-                                    </a>
+                                    <div className="group">
+                                        <Link href="/sign-in" className="btn btn-project inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white rounded-full  md:py-2 md:text-md md:px-10">
+                                            <p >
+                                                Download Now
+                                            </p>
+                                            <img src="/ic/ic-arrow-right.svg" alt="" />
+                                        </Link>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </aside>
@@ -150,4 +156,35 @@ export default function DetailProject() {
             </section>
         </>
     )
+}
+
+export async function getStaticPaths() {
+    const paths = projectData.map((item: any) => ({
+        params: {
+            id: item.id,
+        },
+    }));
+    return {
+        paths,
+        fallback: false,
+    };
+}
+
+interface GetStaticProps {
+    params: {
+        id: string;
+    }
+}
+
+
+
+export async function getStaticProps({ params }: GetStaticProps) {
+    const { id } = params;
+
+    return {
+        props: {
+            dataItem: projectData.filter(item => item.id === id),
+
+        },
+    };
 }

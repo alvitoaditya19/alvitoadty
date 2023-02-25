@@ -4,7 +4,7 @@ import FeaturedCard from './FeaturedCard'
 export default function Featured() {
   return (
     <>
-       <section className="featured-skill bg-kBackgroundColor">
+       <section className="featured-skill bg-kBackgroundColor lg:px-20 px-4">
         <div className="container-fluid">
             <h2 className="text-4xl font-bold title-gradient mb-8 text-start">My Featured<br/>Professional Skills
             </h2>
