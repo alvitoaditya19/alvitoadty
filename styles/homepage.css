@@ -328,5 +328,21 @@ footer ul li a:hover {
   }
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.line-clamp1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

@@ -13,7 +13,7 @@ export default function ItemSkill(props: ItemSkillTypes) {
         name, desc, thumbnail,
     } = props;
     return (
-        <div className=' lg:w-[440px] w-[340px] rounded-[20px] bg-kBackgroundColor2 lg:p-[18px] lg:mx-[12px] p-[14px] mx-[6px] hover:border-4 hover:border-kPurple'>
+        <a className=' lg:w-[440px] w-[340px] rounded-[20px] bg-kBackgroundColor2 lg:p-[18px] lg:mx-[12px] p-[14px] mx-[6px] hover:border-4 hover:border-kPurple' href='#'>
             <div className="flex  items-center">           
                 <img src={thumbnail} className=" w-16 mr-1" alt="" />
                 <div className="content ml-2">
@@ -25,6 +25,6 @@ export default function ItemSkill(props: ItemSkillTypes) {
                     </h1>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }

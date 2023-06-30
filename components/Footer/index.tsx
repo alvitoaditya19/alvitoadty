@@ -143,7 +143,7 @@ export default function Footer() {
               <form onSubmit={submit}>
                 <input
                   type="text"
-                  className="bg-white focus:outline-none border-0 px-6 py-3 mt-6 md:w-4/6 w-3/6"
+                  className="bg-white focus:outline-none border-0 px-4 py-3 mt-6 md:w-3/6 w-2/6"
                   placeholder="Your email addres"
                 />
                 <button className=" bg-kBlueColor hover:bg-kPurple transition-all duration-200 focus:outline-none shadow-inner text-white px-4 md:px-3 py-3">

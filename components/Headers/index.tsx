@@ -40,7 +40,7 @@ export default function Header() {
                                 sequence={[
                                     'Fullstack Developer',
                                     2000,
-                                    'Electrical Engineering Student',
+                                    'Fresh Graduate of Electrical Enginnering',
                                     2000,
                                     'UI Designer',
                                     2000,
@@ -49,13 +49,9 @@ export default function Header() {
                                 className='title-profesi lg:font-bold font-semibold lg:text-[36px] text-[30px]'
                                 cursor={true}
                                 repeat={Infinity}
-
                             />
-
                             <p className=" lg:text-[18px] text-[14px] text-kGreyColor lg:mt-4 mt-3">Launch your business website or application today. Grow Your Brand with Impressive and Powerful platform with me!
                             </p>
-
-
                             <div className="flex flex-row gap-4 lg:mt-6 mt-3 items-center">
                                 <div className="group">
                                     <Link href="/sign-in" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
