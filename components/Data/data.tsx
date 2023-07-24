@@ -112,8 +112,8 @@ export const projectData = [
       "Workout App",
       "Trainer & Tracker App"
     ],
-    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    link: "https://github.com/alvitoaditya19/Aplikasi-Klasifikasi-Sayuran",
+    about: "Experience the ultimate gaming platform with our MERN-based voucher game website. Offering a wide array of services, including an intuitive admin CMS, seamless transaction system, secure login functionality, and powerful API integration, we cater to the needs of gaming enthusiasts. Our admin CMS empowers administrators to effortlessly manage game vouchers, transactions, user accounts, and more. Users can explore a diverse collection of game vouchers, make secure purchases, and access personalized features through our user authentication system. With seamless API integration, our platform ensures a dynamic and immersive gaming experience. Join us today and indulge in a world of gaming excitement.",
+    link: "https://github.com/alvitoaditya19/storegg-client",
   },
   {
     id: "7",
@@ -134,5 +134,78 @@ export const projectData = [
     ],
     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "https://github.com/alvitoaditya19/Aplikasi-Klasifikasi-Sayuran",
+  },
+  {
+    id: "8",
+    name: "Airplane Application with Flutter",
+    category: "Mobile Application",
+    subName: "My Internet of Things Application with monitoring and control data from firebase",
+    image: [
+      "/images/porto8-1.png",
+      "/images/porto8-2.png",
+      "/images/porto8-3.png",
+      "/images/porto8-4.png"
+    ],
+    technology: [
+      "Figma",
+      "Flutter"
+    ],
+    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://github.com/alvitoaditya19/AirPlane",
+  },
+  {
+    id: "9",
+    name: "Doctor APP UI Design with figma",
+    category: "UI UX Design",
+    subName: "My Internet of Things Application with monitoring and control data from firebase",
+    image: [
+      "/images/porto9-1.png",
+      "/images/porto9-2.png",
+      "/images/porto9-3.png",
+      "/images/porto9-4.png"
+    ],
+    technology: [
+      "Figma",
+      "Dribble"
+    ],
+    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://dribbble.com/shots/21888649-Mobile-Doctor-Appointment-UI-Design",
+  },
+  {
+    id: "10",
+    name: "Shoes Market Store with Flutter And Laravel",
+    category: "Mobile Apps and Website",
+    subName: "My Internet of Things Application with monitoring and control data from firebase",
+    image: [
+      "/images/porto10-1.png",
+      "/images/porto10-2.png",
+      "/images/porto10-1.png",
+      "/images/porto10-2.png"
+    ],
+    technology: [
+      "Figma",
+      "Flutter",
+      "Laravel"
+    ],
+    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://github.com/alvitoaditya19/shamo",
+  },
+  {
+    id: "11",
+    name: "Store Website With Laravel 10",
+    category: "Website",
+    subName: "My Internet of Things Application with monitoring and control data from firebase",
+    image: [
+      "/images/porto11-1.png",
+      "/images/porto11-2.png",
+      "/images/porto11-1.png",
+      "/images/porto11-2.png"
+    ],
+    technology: [
+      "Laravel",
+      "Figma"
+    ],
+    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://github.com/alvitoaditya19/store-app-laravel",
   },
 ];

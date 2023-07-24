@@ -32,7 +32,7 @@ export default function MyAchievement() {
         },
     ];
     return (
-        <div className=" bg-kBackgroundColor lg:pt-16 pt-14">
+        <div className=" bg-kBackgroundColor lg:pt-16 pt-14" id="achievement">
             <div className="container mx-auto">
                 <div className="flex text-center">
                     <div className="w-full header-wrap pb-10">

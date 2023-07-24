@@ -29,11 +29,13 @@
   font-size: 2rem;
 }
 
-.nav-logo:hover{
+.nav-logo:hover {
   text-decoration: none;
   color: #0057FF;
 
 }
+
+
 
 @media screen and (max-width: 960px) {
   .nav-logo {
@@ -81,9 +83,10 @@
 }
 
 .nav-item .active {
-  color: #0057FF;
-  border: 1px solid #0057FF;
+  color: #fff;
+  border: none;
 }
+
 
 .nav-icon {
   display: none;

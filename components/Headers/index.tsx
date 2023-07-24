@@ -25,7 +25,7 @@ export default function Header() {
     }, [filled1, filled2, filled3, isRunning1, isRunning2, isRunning3])
     return (
         <>
-            <section className="header lg:pt-16 pb-50 bg-kBackgroundColor">
+            <section className="header lg:pt-16 pb-50 bg-kBackgroundColor" id="home">
                 <div className="container-fluid lg:px-20 px-6">
                     <div className="flex flex-wrap">
                         <div className="w-full md:w-1/2 my-auto">
@@ -50,7 +50,8 @@ export default function Header() {
                                 cursor={true}
                                 repeat={Infinity}
                             />
-                            <p className=" lg:text-[18px] text-[14px] text-kGreyColor lg:mt-4 mt-3">Launch your business website or application today. Grow Your Brand with Impressive and Powerful platform with me!
+                            <p className=" lg:text-[16px] text-[14px] text-kGreyColor lg:mt-4 mt-3">
+                            I'm a fresh graduate of Electrical Engineering and a skilled full stack developer proficient in MERN, Laravel, and Flutter. With a passion for creating intuitive and efficient web and mobile applications, I bring a unique blend of technical knowledge and problem-solving skills to deliver captivating digital experiences.
                             </p>
                             <div className="flex flex-row gap-4 lg:mt-6 mt-3 items-center">
                                 <div className="group">

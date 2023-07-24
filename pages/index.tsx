@@ -10,6 +10,8 @@ import Navbar from '../components/Navbar';
 import Featured from '../components/Featured';
 import Project from '../components/Project';
 import MyAchievement from '../components/Achievement';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
 
 
 export default function Home() {
@@ -17,7 +19,7 @@ export default function Home() {
     AOS.init();
   }, []);
 
-  
+
   return (
     <>
       <Head>
@@ -25,13 +27,15 @@ export default function Home() {
         <meta name="description" content="Muhammad Alvito Aditya" />
         <link rel="icon" href="/images/my-logo.png" />
       </Head>
-      <Navbar/>
+      <Navbar />
       <Header />
       <Benefits />
-      <Skills/>
-      <Featured/>
-      <Project/>
-      <MyAchievement/>
+      <Education />
+      <Experience />
+      <Skills />
+      <Featured />
+      <Project />
+      <MyAchievement />
       <Footer />
     </>
   )
