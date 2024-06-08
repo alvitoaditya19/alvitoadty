@@ -26,7 +26,7 @@ function NavBar() {
                 width={60}
                 height={60}
                 alt="console"
-                className='rounded-2xl relative mr-4' />
+                className='rounded-xl relative mr-4' />
               <h1>Alvito Aditya</h1>
             </div>
           </NextLink>
@@ -38,8 +38,8 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link activeClass="active" smooth spy to="education" className="nav-links">
-                Education
+              <Link activeClass="active" smooth spy to="experience" className="nav-links">
+                Experience
               </Link>
             </li>
             <li className="nav-item">

@@ -26,13 +26,13 @@ export default function Header() {
     return (
         <>
             <section className="header lg:pt-16 pb-50 bg-kBackgroundColor" id="home">
-                <div className="container-fluid lg:px-20 px-6">
+                <div className="container-fluid lg:px-20 px-6 lg:pt-0 pt-16 lg:pb-0 pb-8">
                     <div className="flex flex-wrap">
-                        <div className="w-full md:w-1/2 my-auto">
-                            <p className="text-support text-lg text-kGreenColor">
+                        <div className="w-full md:w-1/2 my-auto" data-aos="fade-right">
+                            <p className="text-support text-lg text-kOrangeColor">
                                 #collaborationwithme
                             </p>
-                            <h1 className="header-title text-white lg:font-bold font-semibold lg:text-[36px] text-[30px] lg:mt-3 mt-2">
+                            <h1 className="header-title text-kBlackColor lg:font-bold font-semibold lg:text-[36px] text-[30px] lg:mt-3 mt-2">
                                 Hello, i’m Alvito Aditya
                             </h1>
 
@@ -50,8 +50,8 @@ export default function Header() {
                                 cursor={true}
                                 repeat={Infinity}
                             />
-                            <p className=" lg:text-[16px] text-[14px] text-kGreyColor lg:mt-4 mt-3">
-                            I'm a fresh graduate of Electrical Engineering and a skilled full stack developer proficient in MERN, Laravel, and Flutter. With a passion for creating intuitive and efficient web and mobile applications, I bring a unique blend of technical knowledge and problem-solving skills to deliver captivating digital experiences.
+                            <p className=" lg:text-[16px] text-[14px] text-kGreyColor1 lg:mt-4 mt-3">
+                                Launch your business website or application today. Grow Your Brand with Impressive and Powerful platform with me!
                             </p>
                             <div className="flex flex-row gap-4 lg:mt-6 mt-3 items-center">
                                 <div className="group">
@@ -79,29 +79,28 @@ export default function Header() {
                         </div>
                         <div className="w-full md:w-1/2 md:block hidden">
                             <div className="flex lg:justify-end justify-center lg:mr-2">
-                                <div className="relative" data-aos="zoom-in">
-                                    <img src="/images/img-prof.png" className="max-w-full h-auto" alt="" />
-                                    <div className="card left-card absolute border-0 bg-white">
+                                <div className="relative">
+                                    <img src="/images/img-prof.png" className="max-w-full h-auto" alt=""  data-aos="zoom-in"/>
+                                    <div className="card left-card absolute border-0 bg-white" data-aos="fade-right" data-aos-duration="1000">
                                         <div className="d-flex align-items-center mb-2 gap-3">
-                                            <h1 className="text-[14px] font-semibold text-kBackgroundColor">
+                                            <h1 className="text-[14px] font-semibold text-kBlackColor">
                                                 My Skills
                                             </h1>
                                         </div>
                                         <div className="flex">
                                             <img src="/ic/ic-flutter.png" className=" w-8 mr-1" alt="" />
                                             <div className='content'>
-                                                <h1 className="text-[12px] font-semibold text-kBackgroundColor">
+                                                <h1 className="text-[12px] font-semibold text-kBlackColor">
                                                     App Developer
                                                 </h1>
                                                 <div className="flex items-center">
-                                                    <div className="progressbar">
+                                                <div className="progressbar">
                                                         <div style={{
                                                             height: "100%",
                                                             width: `${filled1}%`,
-                                                            backgroundColor: "#0057FF",
+                                                            background: "linear-gradient(266.71deg, #0072FF -17.76%, #00C6FF 89.69%)",
                                                             transition: "width 0.5s"
                                                         }}></div>
-
                                                     </div>
                                                     <span className="progressPercent">{filled1}%</span>
                                                 </div>
@@ -111,18 +110,17 @@ export default function Header() {
                                         <div className="flex mt-2">
                                             <img src="/ic/ic-react.png" className=" w-8 mr-1" alt="" />
                                             <div className='content'>
-                                                <h1 className="text-[12px] font-semibold text-kBackgroundColor">
+                                                <h1 className="text-[12px] font-semibold text-kBlackColor">
                                                     Web Developer
                                                 </h1>
                                                 <div className="flex items-center">
-                                                    <div className="progressbar">
+                                                <div className="progressbar">
                                                         <div style={{
                                                             height: "100%",
                                                             width: `${filled2}%`,
-                                                            backgroundColor: "#0057FF",
+                                                            background: "linear-gradient(266.71deg, #0072FF -17.76%, #00C6FF 89.69%)",
                                                             transition: "width 0.5s"
                                                         }}></div>
-
                                                     </div>
                                                     <span className="progressPercent">{filled2}%</span>
                                                 </div>
@@ -130,9 +128,9 @@ export default function Header() {
                                         </div>
 
                                         <div className="flex mt-2">
-                                            <img src="/ic/ic-figma.png" className=" w-8 mr-1" alt="" />
+                                            <img src="/ic/ic-figma.png" className="w-8 mr-1" alt="" />
                                             <div className='content'>
-                                                <h1 className="text-[12px] font-semibold text-kBackgroundColor">
+                                                <h1 className="text-[12px] font-semibold text-kBlackColor">
                                                     UI/UX Designer
                                                 </h1>
                                                 <div className="flex items-center">
@@ -140,25 +138,25 @@ export default function Header() {
                                                         <div style={{
                                                             height: "100%",
                                                             width: `${filled3}%`,
-                                                            backgroundColor: "#0057FF",
+                                                            background: "linear-gradient(266.71deg, #0072FF -17.76%, #00C6FF 89.69%)",
                                                             transition: "width 0.5s"
                                                         }}></div>
-
                                                     </div>
                                                     <span className="progressPercent">{filled3}%</span>
                                                 </div>
                                             </div>
                                         </div>
 
+
                                     </div>
-                                    <div className="card right-card absolute border-0 bg-white">
+                                    <div className="card right-card absolute border-0 bg-white" data-aos="fade-left" data-aos-duration="1000">
                                         <div className="relative flex flex-row justify-center mb-6">
                                             <img src="/ic/ic-check.png" className=" rounded-lg w-20" alt="" />
                                             <p className="right-card-support text-white text-xxs text-center absolute m-0">
                                                 New</p>
                                         </div>
                                         <div>
-                                            <p className="text-[24px] font-semibold text-kBackgroundColor text-center m-0">100%</p>
+                                            <p className="text-[24px] font-semibold text-kBlackColor text-center m-0">100%</p>
                                             <p className="text-[20px] text-kGreyColor items-center text-center font-light  m-0">Verified</p>
                                         </div>
                                     </div>

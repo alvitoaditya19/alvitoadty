@@ -1,8 +1,17 @@
 [type='text']:focus, [type='email']:focus{
   outline: none !important;
-  border:1px solid #E100FF !important;
+  border:1px solid #0072FF !important;
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1.5px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  --tw-ring-color: #E100FF !important;
+  --tw-ring-color: #0072FF !important;
+}
+
+.gradient-color {
+  background: linear-gradient(266.22deg, #0072FF 27.18%, #00C6FF 81.75%);
+}
+
+.blur {
+  filter: blur(3px); 
+  transition: filter 0.3s ease;
 }
 
 /* Header */
@@ -13,7 +22,7 @@
   width: 150px;
   height: 10px;
   border-radius: 100px;
-  background-color: #B0B1CE;
+  background-color: #A2B8D4;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
@@ -35,7 +44,7 @@
   background: #ffffff !important;
   height: 40px !important;
   width: 40px !important;
-  fill: #0057FF !important;
+  fill: #00C6FF !important;
 }
 
 @media (min-width: 992px) {
@@ -61,15 +70,15 @@
 }
 
 .btn-get-started {
-  background: linear-gradient(266.69deg, #E100FF 11.05%, #0057FF 111.12%);
+  background: linear-gradient(266.69deg, #0072FF 11.05%, #00C6FF 111.12%);
 }
 
 .btn-get-started:hover {
-  background: linear-gradient(266.69deg, #E100FF 11.05%, #0057FF 111.12%);
+  background: linear-gradient(266.69deg, #0072FF 11.05%, #00C6FF 111.12%);
 }
 
 .btn-get-started:focus {
-  background: linear-gradient(266.69deg, #E100FF 11.05%, #0057FF 111.12%);
+  background: linear-gradient(266.69deg, #0072FF 11.05%, #00C6FF 111.12%);
 }
 
 .header .btn-learn:hover {
@@ -109,7 +118,7 @@
 
 .title-profesi {
 
-  background: linear-gradient(266.22deg, #E100FF 27.18%, #0057FF 81.75%);
+  background: linear-gradient(266.22deg, #0072FF 27.18%, #00C6FF 81.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -120,7 +129,7 @@
 /* Benefits */
 
 .title-gradient {
-  background: linear-gradient(266.22deg, #E100FF 27.18%, #0057FF 81.75%);
+  background: linear-gradient(266.22deg, #0072FF 27.18%, #00C6FF 81.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -222,7 +231,7 @@
 
 /* Project */
 .btn-project{
-  background: linear-gradient(266.69deg, #E100FF -5.19%, #7F00FF 73.59%);
+  background: linear-gradient(266.69deg, #0072FF -5.19%, #00C6FF 73.59%);
 }
 /*  */
 

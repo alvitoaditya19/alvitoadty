@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from 'next/link';
+
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 export default function Footer() {
   function submit() { }
 
   return (
-    <section className="footer pt-50 bg-kBackgroundColor2">
+    <section className="footer pt-50 bg-kBackgroundColor2 md:px-14 px-2">
       <footer>
         <div className="container-fluid bg-kBackgroundColor2">
           <div className="flex flex-wrap justify-start">
@@ -20,7 +22,7 @@ export default function Footer() {
 
                 </div>
               </a>
-              <p className="mt-7 text-lg text-white mb-7">
+              <p className="mt-7 text-lg text-kGreyColor1 mb-7">
                 Allow me to development your platform that
                 showcase your brand in the best possible light
                 through my fullstack skills
@@ -39,7 +41,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         About Us
                       </a>
@@ -47,7 +49,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Press Release
                       </a>
@@ -55,7 +57,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Terms of Use
                       </a>
@@ -63,7 +65,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Privacy & Policy
                       </a>
@@ -78,7 +80,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Refund Policy
                       </a>
@@ -86,7 +88,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Unlock Rewards
                       </a>
@@ -94,7 +96,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href=""
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         Live Chatting
                       </a>
@@ -109,7 +111,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href="mailto: hi@store.gg"
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         email
                       </a>
@@ -117,7 +119,7 @@ export default function Footer() {
                     <li className="mb-6">
                       <a
                         href="mailto: team@store.gg"
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         linkedin
                       </a>
@@ -126,7 +128,7 @@ export default function Footer() {
                       <a
                         href="http://maps.google.com/?q=Pasific 12,
                                         Jakarta Selatan"
-                        className="text-lg text-kGreyColor text-decoration-none"
+                        className="text-lg text-kGreyColor1 text-decoration-none"
                       >
                         instagram
                       </a>
@@ -137,19 +139,21 @@ export default function Footer() {
             </div>
             <div className="w-6/6 md:w-1/4 px-2 mb-8 md:mb-0">
               <h6 className="text-white">Promotions</h6>
-              <p className="mt-4 text-kGreyColor ">
+              <p className="mt-4 text-kGreyColor1 mb-4">
                 Submit your email for new updates
               </p>
-              <form onSubmit={submit}>
+              <div onSubmit={submit} className="flex">
                 <input
                   type="text"
-                  className="bg-white focus:outline-none border-0 px-4 py-3 mt-6 md:w-3/6 w-2/6"
+                  className="bg-white focus:outline-none border-0 px-4 py-3"
                   placeholder="Your email addres"
                 />
-                <button className=" bg-kBlueColor hover:bg-kPurple transition-all duration-200 focus:outline-none shadow-inner text-white px-4 md:px-3 py-3">
-                  Daftar Now
-                </button>
-              </form>
+                <Link href="/" className=" gradient-color px-4 py-3 h-full">
+                  <h1 className="text-white">
+                    Enter
+                  </h1>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

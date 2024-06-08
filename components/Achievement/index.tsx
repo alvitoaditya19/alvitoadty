@@ -36,7 +36,7 @@ export default function MyAchievement() {
             <div className="container mx-auto">
                 <div className="flex text-center">
                     <div className="w-full header-wrap pb-10">
-                        <p className="text-base font-semibold text-kGreenColor">
+                        <p className="text-base font-semibold text-kOrangeColor">
                             My Programming Achievement
                         </p>
                         <h2 className="title-gradient font-semibold text-[30px] mt-2">
@@ -62,7 +62,7 @@ export default function MyAchievement() {
                                     <div className='lg:h-[500px] h-[260px] rounded-[30px] lg:mx-20 mx-10 relative' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
 
                                     </div>
-                                    <h1 className='text-white lg:text-2xl text-lg font-semibold lg:mt-5 mt-3'>{slideImage.caption}</h1>
+                                    <h1 className='text-kBlackColor lg:text-2xl text-lg font-semibold lg:mt-5 mt-3'>{slideImage.caption}</h1>
                                 </div>
                             ))}
                         </Slide>

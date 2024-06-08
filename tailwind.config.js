@@ -17,12 +17,21 @@ module.exports = {
     },
     supports: {},
     colors: ({ colors }) => ({
-      kBackgroundColor: '#0B034A',
+      kBackgroundColor: '#F3F8FF',
       kBackgroundColor2: '#1A0D73',
       kGreenColor: '#14FFEC',
-      kGreyColor: '#A8B1D0',
       kPurple:'#E100FF',
-      kBlueColor:'#0057FF',
+      kBlueColor:'#0072FF',
+      kBlueColor2:'#00C6FF',
+      kBlackColor:'#122B8E',
+      kBlackColor2:'#0F226B',
+      kOrangeColor:'#FF9B06',
+      kGreyColor1:'#A2B8D4',
+      kGreyColor2:'#8CA2BD',
+
+
+
+
       primary:'#E100FF',
 
       inherit: colors.inherit,

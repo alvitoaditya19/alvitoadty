@@ -8,8 +8,8 @@ export default function Skills() {
         <>
             <section className="w-[100%] flex justify-center items-center flex-col lg:pb-10 pb-8 overflow-hidden bg-kBackgroundColor">
                 <div className="flex text-center">
-                    <div className="w-full header-wrap">
-                        <p className="text-base font-semibold text-kGreenColor">
+                    <div className="w-full header-wrap" data-aos="fade-up" data-aos-duration="1000">
+                        <p className="text-base font-semibold text-kOrangeColor">
                             My Advanced Skills
                         </p>
                         <h2 className="title-gradient font-semibold text-[30px] mt-2 mb-8">

@@ -7,28 +7,6 @@
 
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: #0B034A;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0057FF; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #0057FF; 
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

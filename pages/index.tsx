@@ -30,13 +30,11 @@ export default function Home() {
       <Navbar />
       <Header />
       <Benefits />
-      <Education />
       <Experience />
       <Skills />
-      <Featured />
       <Project />
-      <MyAchievement />
-      <Footer />
+      <MyAchievement /> 
+      <Footer /> 
     </>
   )
 }

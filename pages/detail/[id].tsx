@@ -50,7 +50,7 @@ export default function DetailProject({ dataItem }: any) {
                     <div className="flex flex-row flex-wrap py-4">
                         <main role="main" className="w-full px-4 pt-1 sm:w-2/3 md:w-2/3">
                             <h1
-                                className="mb-2 text-3xl font-bold leading-normal tracking-tight text-white sm:text-4xl md:text-4xl"
+                                className="mb-2 text-3xl font-bold leading-normal tracking-tight text-kBlackColor sm:text-4xl md:text-4xl"
                             >
                                 {dataItem[0].name}
                             </h1>
@@ -60,51 +60,51 @@ export default function DetailProject({ dataItem }: any) {
                                 <img src={image} alt="" className="w-full mt-6 rounded-2xl md:h-[480px] h-[250px]" />
 
                                 <div className="grid grid-cols-4 gap-4 mt-4">
-                                    <div className={image === imageCon1 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
+                                    <div className={image === imageCon1 ? "overflow-hidden cursor-pointer ring-2 ring-kBlueColor rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
                                         <img src={dataItem[0].image[0]} className="w-full h-full" alt="" onClick={handleClick1} />
                                     </div>
-                                    <div className={image === imageCon2 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"} >
+                                    <div className={image === imageCon2 ? "overflow-hidden cursor-pointer ring-2 ring-kBlueColor rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"} >
                                         <img src={dataItem[0].image[1]} className="w-full h-full" alt="" onClick={handleClick2} />
                                     </div>
-                                    <div className={image === imageCon3 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
+                                    <div className={image === imageCon3 ? "overflow-hidden cursor-pointer ring-2 ring-kBlueColor rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
                                         <img src={dataItem[0].image[2]} className="w-full h-full" alt="" onClick={handleClick3} />
                                     </div>
-                                    <div className={image === imageCon4 ? "overflow-hidden cursor-pointer ring-2 ring-indigo-500 rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
+                                    <div className={image === imageCon4 ? "overflow-hidden cursor-pointer ring-2 ring-kBlueColor rounded-2xl" : "overflow-hidden cursor-pointer rounded-2xl"}>
                                         <img src={dataItem[0].image[3]} className="w-full h-full" alt="" onClick={handleClick4} />
                                     </div>
                                 </div>
                             </section>
                             <section className="" id="orders">
-                                <h1 className="mt-8 mb-3 text-lg font-semibold text-white">About</h1>
-                                <div className="text-kGreyColor">
+                                <h1 className="mt-8 mb-3 text-lg font-semibold text-kBlackColor">About</h1>
+                                <div className="text-kGreyColor1">
                                     <p className="pb-4">
                                         {dataItem[0].about}
                                     </p>
                                     <p className="pb-4">
-                                        <h1 className=' mb-2 text-lg font-semibold text-white'>Technology : </h1>
+                                        <h1 className=' mb-2 text-lg font-semibold text-kBlackColor'>Technology : </h1>
                                         {dataItem[0].technology.map((technology: any) => <div className="flex  mb-2"><img src="/imgzul/icon-check.png" className="float-right w-5 mt-1" alt="" /><div key={technology}
-                                            className=" ml-1 texl-lg">{technology}</div></div>)}
+                                            className="text-kGreyColor1 ml-1 texl-lg">{technology}</div></div>)}
                                     </p>
                                 </div>
                             </section>
                         </main>
                         <aside className="w-full px-4 sm:w-1/3 md:w-1/3">
                             <div className="sticky lg:top-20 top-0 w-full pt-4 md:mt-24 ">
-                                <div className="p-6 border rounded-2xl">
+                                <div className="p-6 border rounded-2xl border-kGreyColor1">
                                     <div className="mb-4">
                                         <div className="flex mb-4">
                                             <div>
                                                 <img src="/images/img-prof2.png" alt="" className="w-16" />
                                             </div>
                                             <div className="block mt-1 ml-4">
-                                                <h3 className="font-semibold text-md text-white">Muhammad Alvito Aditya</h3>
-                                                <p className="text-kGreyColor text-md">Fullstack Developer</p>
+                                                <h3 className="font-semibold text-md text-kBlackColor">Muhammad Alvito Aditya</h3>
+                                                <p className="text-kGreyColor2 text-md">Fullstack Developer</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <h1 className="mt-5 mb-3 font-semibold text-md text-white">About Me</h1>
-                                        <ul className="mb-6 text-kGreyColor">
+                                        <h1 className="mt-5 mb-3 font-semibold text-md text-kBlackColor">About Me</h1>
+                                        <ul className="mb-6 text-kGreyColor1">
                                             <li className="mb-2">
                                             Creative Problem-Solving Mastery
                                                 <img src="/imgzul/icon-check.png" className="float-right w-5 mt-1" alt="" />
