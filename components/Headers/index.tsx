@@ -55,7 +55,7 @@ export default function Header() {
                             </p>
                             <div className="flex flex-row gap-4 lg:mt-6 mt-3 items-center">
                                 <div className="group">
-                                    <Link href="/sign-in" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
+                                    <Link href="/link" className="btn-project  text-white px-12 rounded-full justify-center text-[18px] font-medium">
                                         <p >
                                             Hire Me
                                         </p>

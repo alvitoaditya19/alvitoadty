@@ -57,50 +57,50 @@ export default function SignIn() {
                         </div>
 
                         <div className="lg:pl-12">
-                            <div className="overflow-hidden bg-kBackgroundColor2 rounded-3xl">
+                            <div className="overflow-hidden bg-white rounded-3xl">
                                 <div className="p-6 sm:p-10">
                                     <form action="#" method="POST" className="mt-4">
                                         <div className="space-y-8">
 
                                             <div>
-                                                <label htmlFor="" className="text-base font-medium text-white "> Full Name </label>
-                                                <div className="relative flex w-full flex-wrap items-stretch mb-3 mt-[14px] rounded-full  border border-white ">
+                                                <label htmlFor="" className="text-base font-medium text-kBlackColor "> Full Name </label>
+                                                <div className="relative flex w-full flex-wrap items-stretch mb-3 mt-[14px] rounded-full  border border-kBlackColor ">
                                                     <span className="z-10 h-full leading-snug font-normal absolute text-center text-slate-300  bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-4">
                                                         <img src="/ic/ic-user.svg" alt="" />
                                                     </span>
-                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-white text-white relative bg-transparent  text-sm border border-white outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
+                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-kBlackColor text-kBlackColor relative bg-transparent  text-sm border border-kBlackColor outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <label htmlFor="" className="text-base font-medium text-white "> Email address </label>
+                                                <label htmlFor="" className="text-base font-medium text-kBlackColor "> Email address </label>
                                                 <div className="relative flex w-full flex-wrap items-stretch mb-3 mt-[14px] rounded-full">
                                                     <span className="z-10 h-full leading-snug font-normal absolute text-center text-slate-300  bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-4">
                                                         <img src="/ic/ic-email.svg" alt="" />
                                                     </span>
-                                                    <input type="email" placeholder="Placeholder" className="px-3 py-4 placeholder-white text-white relative bg-transparent  text-sm border border-white outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
+                                                    <input type="email" placeholder="Placeholder" className="px-3 py-4 placeholder-kBlackColor text-kBlackColor relative bg-transparent  text-sm border border-kBlackColor outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
                                                 </div>
                                             </div>
                                             <div>
-                                                <label htmlFor="" className="text-base font-medium text-white "> Brief </label>
+                                                <label htmlFor="" className="text-base font-medium text-kBlackColor "> Brief </label>
                                                 <div className="relative flex w-full flex-wrap items-stretch mb-3 mt-[14px] rounded-full ">
                                                     <span className="z-10 h-full leading-snug font-normal absolute text-center text-slate-300  bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-4">
                                                         <img src="/ic/ic-brief.svg" alt="" />
                                                     </span>
-                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-white text-white relative bg-transparent  text-sm border border-white outline-none focus:outline-none focus:ring w-full pl-10 rounded-[16px] focus:bg-transparent pb-20" />
+                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-kBlackColor text-kBlackColor relative bg-transparent  text-sm border border-kBlackColor outline-none focus:outline-none focus:ring w-full pl-10 rounded-[16px] focus:bg-transparent pb-20" />
                                                 </div>
                                             </div>
                                             <div>
-                                                <label htmlFor="" className="text-base font-medium text-white "> Range Budget </label>
+                                                <label htmlFor="" className="text-base font-medium text-kBlackColor "> Range Budget </label>
                                                 <div className="relative flex w-full flex-wrap items-stretch mb-3 mt-[14px] rounded-full">
                                                     <span className="z-10 h-full leading-snug font-normal absolute text-center text-slate-300  bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-4">
                                                         <img src="/ic/ic-budget.svg" alt="" />
                                                     </span>
-                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-white text-white relative bg-transparent  text-sm border border-white outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
+                                                    <input type="text" placeholder="Placeholder" className="px-3 py-4 placeholder-kBlackColor text-kBlackColor relative bg-transparent  text-sm border border-kBlackColor outline-none focus:outline-none focus:ring w-full pl-10 rounded-full focus:bg-transparent" />
                                                 </div>
                                             </div>
                                             <div className="group">
-                                                <Link href="/sign-in" className="btn-project  text-white rounded-full justify-center text-[18px] font-medium">
+                                                <Link href="/sign-in" className="btn-project  text-kBlackColor rounded-full justify-center text-[18px] font-medium">
                                                     <p >
                                                         See Detail
                                                     </p>

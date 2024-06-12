@@ -75,11 +75,12 @@ export default function Experience() {
                         <h1 className="mx-auto text-kBlackColor font-semibold text-lg">4</h1>
                     </div>
                     <div className="order-1  rounded-lg  md:w-4/12 w-full px-6 py-4 bg-white">
-                        <time className="mb-1 text-sm font-normal leading-none text-kGreyColor2">Jan 2022 – Feb 2022</time>
+                        <time className="mb-1 text-sm font-normal leading-none text-kGreyColor2">Aug 2023 – Now</time>
                         <h3 className="md:text-lg text-base font-semibold text-kBlackColor dark:text-kBlackColor mt-2">PT DNP Indonesia</h3>
                         <p className="md:text-base text-xs font-normal text-kBlackColor mt-2">Technical Staff</p>
 
-                        <p className="md:text-base text-xs font-normal text-kGreyColor2 mt-2">Experienced professional in performing routine maintenance on welding machines (robots), presses, and manual welding equipment, ensuring optimal functionality, while possessing comprehensive knowledge of industrial electronic components. Proven ability to successfully resolve issues with robot welding machines through efficient identification and replacement of faulty components, demonstrating a deep understanding of electrical power mechanisms utilized in the manufacturing industry.</p>
+                        <p className="md:text-base text-xs font-normal text-kGreyColor2 mt-2">
+                        Skilled in troubleshooting and diagnosing operational issues with blown film and vacuum metalizing film machines, including identifying and repairing faulty components like Frequency Converter KEB/Siemens, inverters, power supplies, PLCs, and mechanical problems to minimize downtime. Utilizes technical manuals and diagrams to aid in the troubleshooting process and collaborates with production teams to address technical challenges and improve efficiency. </p>
                     </div>
                     <div className="order-1 md:w-2/12 w-0"></div>
 
